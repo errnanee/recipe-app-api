@@ -5,4 +5,4 @@ service:
   -docker
 before_script: pip install docker-compose
 scipt:
-  - docker-compose run app sh -c "python manange.py test && flake8"
+  docker-compose run app sh -c "python manange.py test && flake8"
